@@ -143,3 +143,100 @@ HTML Elements
          width
          height
          title
+
+
+         4) Anchor element
+   ==============
+
+   <a href='' target=''>content </a>
+
+  - The <a> tag (anchor tag) in HTML is used to create a links in the webpage. 
+  - By using links we can navigate from one webpage to other web page(inter navigation).  
+  - By using links we can navigate from one section to another section with in the same webpage
+    (intra navigation).
+
+    Navigation:
+    ----------
+               1) Inter navigation (navigation between documents) 
+
+               2) Intra navigation (navigation between sections with in document)
+
+   Atttribute:
+   ----------
+   href = 'path of another webpage' or '#id value of section in same page'  
+   target => Specifies where to open the linked document.
+
+	        _blank 
+                _parent 
+                _self (default)
+                _top	
+
+   _blank    => Opens the linked document in a new window or tab.
+
+   _self     => Open the link in the current frame.(default)
+
+   _top      => Opens the link in the top-most frame. Frames are deprecated in HTML5.
+
+   _parent   => Opens the link in the parent frame. Frames are deprecated in HTML5.
+
+   framename => Opens the link in the named frame. Frames are deprecated in HTML5.
+
+   download  => Directs the browser to download the linked resource rather than opening it.
+
+
+The only currently relevant value of target is _blank. The other values of target are used to specify specific frames. However, frames have been deprecated in HTML5.
+
+
+5) List elements:
+   =============
+
+   <ul>: Defines an unordered (bulleted) list.
+   <ol>: Defines an ordered (numbered) list.
+   <li>: Represents a list item.
+   <dl>: Defines a description list.
+   <dt>: Represents a term in a description list.
+   <dd>: Provides the description for a term.
+
+   ol => display: block.
+   ul => display: block
+   dl => dispay: block
+
+   Ordered lists are used for lists of items for which the order of the items does matter.
+
+
+
+   Attributes:
+   ---------- 
+
+     - type: we can use type attribute for only ordered and unordered elements.
+     - start and reversed attributes are only for ordered list.
+     
+        
+     - These are only for ordered list
+     
+       - Number (default)
+        
+       - type = 'a/A/I/i'
+     
+       - reversed
+
+       - start
+
+       - Alphabet
+
+            lower case (a)
+            UPPER CASE (A)
+
+       - Roman
+
+            lower case (i)
+            UPPER CASE (I)
+
+     - These are only for unordered list
+
+       type:
+
+       - disc (default)
+       - circle
+       - square
+       - none
