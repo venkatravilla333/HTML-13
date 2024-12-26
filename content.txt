@@ -350,3 +350,158 @@ The iframe in HTML stands for Inline Frame.
 
 -An iframe can be used as the target frame for a link. The target attribute of the link must refer  to the name attribute of the iframe.
 -Bydefault iframe has border, we can remove border by using css also.
+
+
+13) Formatting Elements
+    ===================
+
+  
+  Formatting elements were designed to display special types of text with css styles:
+
+  Bold text: <b> or <strong>
+  --------------------------
+
+  HTML5 provides two tags to make text bold: <b> and <strong>.
+  Both tags have the same effect of making the enclosed text bold, but <strong> is preferred because it indicates that the text is important for semantic purposes.
+
+  Italicized text: <i> or <em>
+  ----------------------------
+
+  HTML5 provides two tags to make text italic: <i> and <em>. Both tags have the same effect of making the enclosed text italic, but <em> is preferred because it indicates that the text has emphasis for semantic purposes.
+
+  Strike-through text: <del> or <s>
+  ---------------------------------
+
+  HTML5 provides two tags to make text strike-through: <s> and <del>. Both tags have the same effect of making the enclosed text strike-through, but <del> is preferred because it indicates that the text has been deleted for semantic purposes.
+
+  Superscript and subscript text: <sup> or <sub>
+  ----------------------------------------------
+
+  HTML5 provides two tags to make text superscript and subscript: <sup> and <sub>, respectively.
+
+  u and ins
+  ---------
+  HTML5 provides two tags u and ins. Both tags have the same effect of making underline.
+  <ins> is used for semantic purpose. The <ins> tags means content inserted after it was first published. The <u> tag is simply for underlining and has no meaning.
+
+  small vs big
+  ------------
+  In HTML, the <small> tag is used to emphasize small text or information that is of secondary significance, such as copyright and legal disclaimer.
+  The <small> tag can be used to mark up a copyright notice or license agreement.
+  HTML <big> tag was used to increase the text font size one level bigger than the document's base font size.
+
+
+  <b> - Bold text
+  <strong> - Important text
+
+  <i> - Italic text
+  <em> - Emphasized text
+
+  <mark> - Highlighted Text
+
+  <s>  - text strick
+  <del> - Deleted text
+
+  <u> - Underline text
+  <ins> - Inserted text
+
+  <sub> - Subscript text
+  <sup> - Superscript text
+
+  <big> tag - Big Text
+  <small> - Smaller text
+
+
+
+  
+19) Media Elements (HTML-5)
+    ==============
+
+ - HTML5 introduces media elements like <audio> and <video> for displaying and playing audio and video content.
+ - The <video> tag is used to embed video content in a document, such as some videos. 
+ - The <audio> tag is used to embed sound content in a document, such as some audios.
+   
+   <audio controls autoplay muted loop>
+
+     <source src="">
+   
+   </audio>
+
+   <video width="320" height="240" controls autoplay muted loop>
+
+     <source src=""> 
+     
+   </video>
+
+   Attributes
+   ----------
+   width
+   height
+   controls
+   autoplay
+   muted
+   loop
+   poster
+   
+
+ - The <source> element allows you to specify alternative audio files.
+ - controls: attribute adds audio controls, like play, pause, and volume.
+ - autoplay: it will work with muted for videos.
+ - loop: Specifies that the video will start over again, every time it is finished.
+ - muted: Specifies that the audio output of the video should be muted.
+ - poster: Specifies an image to be shown while the video is downloading, or until the user hits the play button.
+
+
+ 16) marquee element
+    ===============
+
+The <marquee> tag is a container for creating scrollable text or images within a web page from either left to right or vice versa, or top to bottom or vice versa. But this tag has been deprecated in the new version of HTML, i.e., HTML 5
+
+  Attributes
+  ----------
+  width
+  height
+  direction : left (default right to left) | right | up | down
+  behaviour : slide | scrolling (defalut) | alternate
+  scrolldelay : default 85 (to make slow)
+  scrollamount : default 6 (to make speed)
+  bgcolor
+  loop : times of loop (The default value of loop is INFINITE)
+
+                 
+
+17) symantic elements (HTML-5)
+    ==========================
+
+Semantic elements = elements with a meaning.
+
+A semantic element clearly describes its meaning to both the browser and the developer.
+
+Examples of non-semantic elements: <div> and <span> - Tells nothing about its content.
+
+Examples of semantic elements: <form>, <table>, and <article> - Clearly defines its content.
+
+
+  <table>       :  Defines table.
+  <form>        :  Defines form.
+
+  <details>     :  Defines additional details that the user can view or hide.
+  <summary>     :  Defines a visible heading for a <details> element.
+                   The <summary> tag defines a visible heading for the <details> element. The heading can be clicked to view/hide the details.
+                   The <summary> element should be the first child element of the <details> element.
+
+  <header>      :  Defines a header for a document or section.
+  <nav>         :  Defines navigation links (nav contains <a> tag).
+  <footer>      :  Defines a footer for a document or section.
+
+  <main>        :  Specifies the main content of a document.
+  <section>     :  The <section> element defines a section in a document.
+  <article>     :  Defines an article. Examples of where the <article> element can be used.(Forum posts, Blog posts, User comments, Product cards, Newspaper articles)
+
+  <aside>	:  Defines content aside from the page content. The <aside> content should beindirectly related to the surrounding main content.
+  
+  <figure>  :  Use a <figure> element to mark up a photo in a document, and a    <figcaption> element to define a caption for the photo. Specifies self-contained content, like illustrations, diagrams, photos etc.
+                   
+  <figcaption>  :  Defines a caption for a <figure> element.
+
+
