@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+   table{
+     width: 500px;
+     height: 200px;
+     /* border: 2px solid black; */
+     border: none;
+     
+    }
+    /* td, th{
+      border: 2px solid red;
+     } */
+
+    th{
+      text-align: center;
+      vertical-align: middle;
+      height: 50px;
+    }
+    td{
+      text-align: center;
+      vertical-align: middle;
+      height: 50px;
+    }
+  </style>
+</head>
+<body>
+
+  <table  border="1" cellspacing="4px" cellpadding="4px" >
+    <caption>This is students data</caption>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Course</th>
+        <th>Address</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Rahul</td>
+        <td>Html</td>
+        <td>Hyd</td>
+      </tr>
+      <tr>
+        <td>Hari</td>
+        <td>Css</td>
+        <td rowspan="3">Guntur</td>
+      </tr>
+      <tr>
+        <td>Sai</td>
+        <td>React</td>
+        
+      </tr>
+      <tr>
+        <td>Joji</td>
+        <td>nodejs</td>
+        
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td colspan="3">Copy rights reserved 2025</td>
+      </tr>
+    </tfoot>
+  </table>
+</body>
+</html>
