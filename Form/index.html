@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <script>
+    function sendData(){
+      var data = {}
+      api('api', data)
+    }
+  </script>
+
+  <form autocomplete="on" novalidate onsubmit={sendData}>
+    <fieldset>
+      <legend>This is user data</legend>
+      <div>
+        <!-- <input type="button" value="submit"> -->
+        <input type="number" >
+        <input type="color" >
+        <input type="date" >
+        <input type="tel" >
+        <input type="range" >
+        <input type="time" >
+        <input type="month" >
+        <button>submit</button>
+      </div>
+      <label for="name">Name</label>
+      <div>
+        <input type="text" id="name" placeholder="Enter user name" maxlength="8" minlength="3" size="100" required>
+      </div>
+      <label for="email">Email</label>
+      <div>
+        <input type="email" id="email">
+      </div>
+      <label for="password">Password</label>
+      <div>
+        <input type="password" id="password">
+      </div>
+      <label>Gender</label>
+      <div>
+        <input type="radio" name="gender">Male
+        <input type="radio" name="gender">Female
+      </div>
+      <label>Courses</label>
+      <div>
+        <input type="checkbox">HTML
+        <input type="checkbox">CSS
+        <input type="checkbox">JVASCRIPT
+        <input type="checkbox">REACT
+      </div>
+      <div>
+
+        <textarea name="" id="">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima quidem autem accusantium unde sunt sequi cumque architecto similique dignissimos officiis?
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam alias odio ut facilis pariatur sit! Quas, ratione aspernatur. Rerum, consequatur!
+            </textarea>
+      </div>
+          <div>
+
+            <label for="city">Cities</label>
+            <select id="city">
+              <optgroup label="cities in andhra">
+                <option value="Hyd">Hyd</option>
+                <option value="Guntur" >Guntur</option>
+                <option value="Vijayawada" selected>Vijayawada</option>
+              </optgroup>
+              <optgroup label="Hero names">
+                <option value="Mahesh">Mahesh</option>
+                <option value="Arjun" >Arjun</option>
+                <option value="Ntr" selected>Ntr</option>
+              </optgroup>
+            </select>
+            <div>
+
+              <input type="text" list="hello">
+              <datalist id="hello">
+                <option value="sachin">
+                <option value="kohli">
+                <option value="rahul">
+              </datalist>
+            </div>
+          </div>
+      <div>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+      </div>
+    </fieldset>
+    
+  </form>
+  
+</body>
+</html>
